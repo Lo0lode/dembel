@@ -1,4 +1,5 @@
 import { Counter } from "../../components/Counter";
+import bgVideo from "../../assets/bg1.mp4"; // ✅ Правильный импорт
 
 export const MainPage = () => {
   return (
@@ -8,7 +9,7 @@ export const MainPage = () => {
         autoPlay
         playsInline
         loop
-        src="src/assets/bg1.mp4"
+        src={bgVideo} // ✅ Используем импортированный файл
         className="absolute inset-0 w-full h-full object-cover"
       />
       <Counter />
